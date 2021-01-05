@@ -12,7 +12,7 @@ global.conn = new WAConnection()
 global.timestamp = {
   start: new Date
 }
-global.DATABASE = new (require('./lib/database'))('database.json', null, 2)
+global.DATABASE = new (require('./lib/database'))('dataubase.json', null, 2)
 if (!global.DATABASE.data.users) global.DATABASE.data = {
   users: {},
   groups: {}
